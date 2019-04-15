@@ -25,7 +25,6 @@
 
 <script>
 
-
 export default {
   name: "Agenda",
   data: function () {
@@ -34,15 +33,15 @@ export default {
         links: [
             {
                 caption: 'Vue - What & Why?',
-                route: '/about'
+                route: '/what-is-vue'
             },
             {
                 caption: 'Components & how to use them',
-                route: '/about'
+                route: '/components'
             },
             {
                 caption: 'Binding data & two-way binding',
-                route: '/about'
+                route: '/binding-data'
             },
             {
                 caption: 'Hands-on section: binding, props, & binding props',
@@ -137,9 +136,8 @@ ul {
   min-height: 400px;
 }
 ul {
-  margin: 0 2%;
   padding: 0 10px;
-  border-left: 1px solid #41b883;
+  border-right: 1px solid #41b883;
 }
 h3 p {
   text-align: left !important;

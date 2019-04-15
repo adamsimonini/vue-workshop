@@ -29,6 +29,7 @@ export default {
 }
 h1 {
     margin-top: 0;
+    margin-left: 40px;
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -38,7 +39,7 @@ h1 {
   color: #2c3e50;
   display: grid;
   grid-template-rows: 100px 1fr;
-  grid-template-columns: minmax(10%, auto) 1fr;
+  grid-template-columns: minmax(40px, auto) 1fr;
   grid-template-areas: 
   'header header'
   'nav main';
@@ -55,6 +56,7 @@ h1 {
 }
 .main {
     grid-area: main;
+    padding: 0 20px;
 }
 html, body, #app {
     height: 100%;

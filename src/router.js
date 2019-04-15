@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import WhyVue from './views/WhyVue.vue'
+import Components from './views/Components.vue'
+import BindingData from './views/BindingData.vue'
 
 Vue.use(Router)
 
@@ -20,6 +23,21 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    }
+    },
+    {
+        path: '/what-is-vue',
+        name: 'WhyVue',
+        component: WhyVue
+    },
+    {
+        path: '/components',
+        name: 'Components',
+        component: Components
+    },
+    {
+        path: '/binding-data',
+        name: 'BindingData',
+        component: BindingData
+    },
   ]
 })
