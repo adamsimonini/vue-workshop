@@ -1,31 +1,62 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <span class="header">
+        <div></div>
+        <h1>Welcome to Vue.js, Advanced! <img class="vue-logo" alt="Vue logo" src="./assets/logo.png"></h1>
+        <div></div>
+    </span>
+    <Agenda class='nav'/>
+    <router-view class='main'/>
   </div>
 </template>
 
+<script>
+import Home from './views/Home.vue'
+import Agenda from '@/components/Agenda.vue'
+
+export default {
+  name: "App",
+  components: {
+    Home,
+    Agenda
+  }
+}
+</script>
+
 <style>
+.vue-logo {
+    max-width: 50px;
+}
+h1 {
+    margin-top: 0;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  grid-template-columns: minmax(10%, auto) 1fr;
+  grid-template-areas: 
+  'header header'
+  'nav main';
 }
-#nav {
-  padding: 30px;
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #42b983;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.nav {
+    grid-area: nav; 
 }
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.main {
+    grid-area: main;
+}
+html, body, #app {
+    height: 100%;
 }
 </style>
