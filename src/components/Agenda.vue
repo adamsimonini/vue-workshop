@@ -114,7 +114,6 @@ h3 {
 }
 ul {
   list-style-type: none;
-  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

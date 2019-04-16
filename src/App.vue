@@ -11,13 +11,11 @@
 </template>
 
 <script>
-import Home from './views/Home.vue'
 import Agenda from '@/components/Agenda.vue'
 
 export default {
   name: "App",
   components: {
-    Home,
     Agenda
   }
 }
@@ -30,6 +28,9 @@ export default {
 h1 {
     margin-top: 0;
     margin-left: 40px;
+}
+h2 {
+    text-align: start;
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -56,7 +57,9 @@ h1 {
 }
 .main {
     grid-area: main;
-    padding: 0 20px;
+    text-align: start;
+    margin-left: 20px;
+    padding-left: 20px;
 }
 html, body, #app {
     height: 100%;
