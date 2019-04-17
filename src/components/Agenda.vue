@@ -40,6 +40,10 @@ export default {
                 route: '/components'
             },
             {
+                caption: 'Passing Props (Properties)',
+                route: '/props'
+            },
+            {
                 caption: 'Binding data & two-way binding',
                 route: '/binding-data'
             },

@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import WhyVue from './views/WhyVue.vue'
 import Components from './views/Components.vue'
+import Props from './views/Props.vue'
 import BindingData from './views/BindingData.vue'
 
 Vue.use(Router)
@@ -33,6 +34,11 @@ export default new Router({
         path: '/components',
         name: 'Components',
         component: Components
+    },
+    {
+      path: '/props',
+      name: 'Props',
+      component: Props
     },
     {
         path: '/binding-data',
