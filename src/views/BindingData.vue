@@ -26,16 +26,16 @@
       <p>
           We can use Vue directives to add event listeners. For that, we'll use "v-on:" plus the event listener's name. For example "v-on:click=harvest" 
           (or "@click=harvest" for the short form). We made the click equal "harvest", so in our script area, we need to define the function "harvest". We will do that
-          under "methods"
+          under "methods". Check the code on this page and make sure you understand what is going on with the click event. It's important for the next challenge.
       </p>
-      <button v-on:click='harvest'>Harvest Now</button>
+      <button v-on:click='harvest'>Power On Harvester</button>
   </div>
 </template>
 
 <script>
 
 export default {
-  name: '',
+  name: 'BindingData',
   components: {
   },
   data: function () {

@@ -76,6 +76,7 @@ h3 {
     -moz-box-shadow: 2px 1px 18px -6px rgba(235,0,86,1);
     box-shadow: 2px 1px 18px -6px rgba(235,0,86,1);
     min-height: 100px;
+    border-radius: 20px;
 }
 </style>
 
