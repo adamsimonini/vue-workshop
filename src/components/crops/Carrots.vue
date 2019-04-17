@@ -1,6 +1,6 @@
 <template>
   <div class="crop carrots">
-      <img src="@/assets/farm-images/050-carrots.png" />
+      <img v-on:click='harvest' v-bind:src='image' />
   </div>
 </template>
 
@@ -11,9 +11,13 @@ export default {
   },
   data: function() {
     return {
+        image: '/farm-images/050-carrots.png',
     }
   },
   methods: {
+      harvest: function() {
+          this.image = '/farm-images/002-sprouts.png'
+      }
   }
 }
 </script>

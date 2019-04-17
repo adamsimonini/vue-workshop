@@ -17,10 +17,6 @@
             <router-link :to="item.route">{{item.caption}}</router-link>
         </li>
       </ul>
-      <!-- <p>
-        <b>Goal:</b> get the basics of Vue.js, & build some stuff
-      </p>
-      <a href="https://vuejs.org/v2/guide/">Official Vue Docs</a> -->
     </div>
 </div>
 </template>
@@ -42,12 +38,20 @@ export default {
                 route: '/components'
             },
             {
-                caption: 'Assignment One',
+                caption: 'Challenge One',
                 route: '/assignment-one'
             },
             {
-                caption: 'Binding data & two-way binding',
+                caption: 'Binding data & Events (pt.1)',
                 route: '/binding-data'
+            },
+            {
+                caption: 'Challenge Two',
+                route: '/assignment-two'
+            },
+            {
+                caption: 'Vue Directives',
+                route: '/directives'
             },
             {
                 caption: 'Passing Props (Properties)',

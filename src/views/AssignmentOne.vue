@@ -1,6 +1,6 @@
 <template>
   <div class="assignment-one">
-        <h2>Assignment One: Let's Plant Some Crops</h2>
+        <h2>Challenge One: Let's Plant Some Crops</h2>
         <p>
             Below is your farm! Congratulations, you've been promoted (or demoted, depending on how you look at it)... In any case, it's time to roll up your sleves. 
             The demand for carrots is currently sky high, so let's plant some.
@@ -13,8 +13,8 @@
         <img src="../assets/farmExamples/carrotRow.jpg"/>
         <div v-if='true'>
             <p>
-                But don't stop there! I hear the citizens of our neighbouring metropolis - Winterfell - are fickle eaters, with various tastes. Take a peak inside of the "farm-images" folder,
-                and add "Spinach", "Wheat", and "Eggs" to your crops area, and a few animals to your "livestock" area. 
+                But don't stop there! I hear the citizens of our neighbouring metropolis - Winterfell - are fickle eaters, with various tastes. Take a peak inside of the "farm-images" 
+                folder, one more crop to your farm's "crops" area, and two animals to your "livestock" area. 
                 <b>Hint: you can simply copy & paste the "Carrot" component from earlier, and then swap out the relevant names and images.</b>
             </p>
         </div>
@@ -25,7 +25,7 @@
 <script>
 import Farm from '../components/Farm.vue'
 export default {
-  name: '',
+  name: 'AssignmentOne',
   components: {
     Farm
   }

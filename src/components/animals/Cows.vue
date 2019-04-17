@@ -1,5 +1,5 @@
 <template>
-  <div class="crop cows">
+  <div class="cows livestock">
       <img src="@/assets/farm-images/008-cow.png" />
   </div>
 </template>
