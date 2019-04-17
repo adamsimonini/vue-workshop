@@ -2,13 +2,13 @@
   <div class="farm">
       <h3>Welcome to {{yourName}}'s farm! <img class='barn' src="@/assets/farm-images/001-barn.png"/></h3>
       <div class='products'>
-        <div class='crop-row'>
+        <div v-for="(crops, i) in 4" :key=i class='crop-row'>
             <Carrots />
             <Spinach />
             <Spinach />
             <Carrots />
         </div>
-        <div class='livestock-row'>
+        <div v-for="(crops, i) in 2" :key=i class='livestock-row'>
             <Cows />
             <Cows />
             <Chickens />

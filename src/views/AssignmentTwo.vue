@@ -26,7 +26,7 @@
             <b>Note: the component's methods only have access to variables described in "data()" by using the "this" keyword. So for example, the method must say "this.image = ...".</b>
         </p>
         <p>
-            (If you have extra time, find an image of a steak, throw it into the project, and make the cow turn into it when clicked)
+            (BONUS: If you have extra time, find an image of a steak, throw it into the project, and make the cow turn into it when clicked)
         </p>
     </div>
     <Farm />

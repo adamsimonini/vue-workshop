@@ -54,16 +54,20 @@ export default {
                 route: '/directives'
             },
             {
+                caption: 'Challenge Three',
+                route: '/assignment-three'
+            },
+            {
+                caption: '--10 minute break--',
+                route: '#'
+            },
+            {
                 caption: 'Passing Props (Properties)',
                 route: '/props'
             },
             {
-                caption: 'Hands-on section: binding, props, & binding props',
+                caption: 'Hands-on section: passing props',
                 route: '/about'
-            },
-            {
-                caption: '--break--',
-                route: '#'
             },
             {
                 caption: 'From child to parent: event listeners & custom functions ($emit)',

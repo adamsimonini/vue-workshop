@@ -8,6 +8,7 @@ import BindingData from './views/BindingData.vue'
 import AssignmentOne from './views/AssignmentOne.vue'
 import AssignmentTwo from './views/AssignmentTwo.vue'
 import Directives from './views/VueDirectives.vue'
+import AssignmentThree from './views/AssignmentThree.vue'
 
 Vue.use(Router)
 
@@ -46,14 +47,19 @@ export default new Router({
         component: AssignmentTwo
     },
     {
-      path: '/props',
-      name: 'Props',
-      component: Props
-    },
-    {
       path: '/directives',
       name: 'Directives',
       component: Directives
+    },
+    {
+        path: '/assignment-three',
+        name: 'AssignmentThree',
+        component: AssignmentThree
+    },
+    {
+      path: '/props',
+      name: 'Props',
+      component: Props
     },
   ]
 })
