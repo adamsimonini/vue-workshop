@@ -31,6 +31,7 @@
           (e.g., which are siblings of x , and which are children of y). jQuery is a method of manipulating the DOM without reloading the page. You can target elements,
           remove/add them, add event listeners, and so on.
       </p>
+      <img src="../assets/DOM.png" />
       <p>
           Modern webpages are quite complicated, and since the DOM is a data structure the resulting data structure is complicated, consisting of potentially thousands of nodes.
           Changing the DOM itself requires a call to a DOM API method (e.g., .getElementById), which was never intended for modern web behaviour where udates are frequent.
@@ -38,7 +39,7 @@
           where the rows are created dynamically as the user scrolls). 
       </p>
       <p>
-          The virtual-DOM, or v-DOM, is used by both React & Vue to address this problem. It is a relatively light-weight javascript representation of the DOM. Changes are noted
+          The virtual-DOM, or v-DOM, is used by both React & Vue to address this problem. It is a relatively lightweight javascript representation of the DOM. Changes are noted
           on this JS object, and the DOM is synchronized with the v-DOM by an efficient updaing function. Beyond performance, new opportunities arise. Because everything is
           essentially being done in Javascript, having elements update each other, and displaying those changes to the user, is more simple to code. It's baked right in! 
       </p>

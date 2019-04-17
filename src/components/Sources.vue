@@ -1,6 +1,6 @@
 <template>
   <div class="sources">
-      <p><span>Sources: </span><a :href='sources' target='_blank'>{{sources}}</a></p>
+      <p><span>Further reading: </span><a :href='sources' target='_blank'>{{sources}}</a></p>
   </div>
 </template>
 

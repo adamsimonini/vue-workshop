@@ -60,6 +60,7 @@ h2 {
     text-align: start;
     margin-left: 20px;
     padding-left: 20px;
+    padding-right: 40px;
 }
 html, body, #app {
     height: 100%;

@@ -1,12 +1,14 @@
 <template>
 <div v-on:mouseover="mouseover" v-on:mouseleave="mouseleave">
     <div v-show=!show class="closed-menu">
-        <span>A</span>
-        <span>G</span>
-        <span>E</span>
-        <span>N</span>
-        <span>D</span>
-        <span>A</span>
+        <div class="agenda-text">
+            <span>A</span>
+            <span>G</span>
+            <span>E</span>
+            <span>N</span>
+            <span>D</span>
+            <span>A</span>
+        </div>
     </div>
     <div v-show=show class="opened-menu">
       <h3>Agenda</h3>
@@ -40,12 +42,16 @@ export default {
                 route: '/components'
             },
             {
-                caption: 'Passing Props (Properties)',
-                route: '/props'
+                caption: 'Assignment One',
+                route: '/assignment-one'
             },
             {
                 caption: 'Binding data & two-way binding',
                 route: '/binding-data'
+            },
+            {
+                caption: 'Passing Props (Properties)',
+                route: '/props'
             },
             {
                 caption: 'Hands-on section: binding, props, & binding props',
@@ -95,13 +101,26 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.agenda-text {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+.opened-menu {
+    position: sticky;
+    top: 0;
+    padding-top: 20px;
+}
 .closed-menu span {
     color: white;
     font-size: 1em;
 }
 .closed-menu {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
     height: 100%;
@@ -112,9 +131,6 @@ export default {
     background: -webkit-linear-gradient(top, #42b983 0%,#42b983 41%,#2ab775 52%,#00a54d 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #42b983 0%,#42b983 41%,#2ab775 52%,#00a54d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42b983', endColorstr='#00a54d',GradientType=0 ); /* IE6-9 */
-}
-h3 {
-  margin: 40px 0 0;
 }
 ul {
   list-style-type: none;
