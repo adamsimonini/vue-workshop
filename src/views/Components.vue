@@ -28,7 +28,7 @@
               Notice how all pages using the "Sources" component receive your change.
           </p>
       </div>
-      <Sources sources="https://vuejs.org/v2/guide/components.html" />
+      <Sources url="https://vuejs.org/v2/guide/components.html" />
   </div>
 </template>
 

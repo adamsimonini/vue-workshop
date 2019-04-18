@@ -32,7 +32,7 @@
         The most simple instances of v-for uses a number to identify how many loops must be completed, as seen above
       </p>
       <h4>Array</h4>
-      <div v-for='(item, index) in inventory' :key=index>
+      <div v-for='(item, index) in inventory' :key=item>
           <p>{{index + 1}} {{item}}</p>
       </div>
       <h4>Array of objects</h4>

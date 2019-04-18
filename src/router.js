@@ -11,6 +11,9 @@ import Directives from './views/VueDirectives.vue'
 import AssignmentThree from './views/AssignmentThree.vue'
 import AssignmentFour from './views/AssignmentFour.vue'
 import Emitting from './views/Emitting.vue'
+import AssignmentFive from './views/AssignmentFive.vue'
+import Routing from './views/Routing.vue'
+import Ending from './views/Ending.vue'
 
 Vue.use(Router)
 
@@ -72,6 +75,21 @@ export default new Router({
       path: '/emitting',
       name: 'Emitting',
       component: Emitting
+    },
+    {
+      path: '/assignment-five',
+      name: 'AssignmentFive',
+      component: AssignmentFive
+    },
+    {
+      path: '/routing',
+      name: 'Routing',
+      component: Routing
+    },
+    {
+      path: '/the-end',
+      name: 'Ending',
+      component: Ending
     },
   ]
 })

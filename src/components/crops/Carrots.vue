@@ -17,6 +17,7 @@ export default {
   methods: {
       harvest: function() {
           this.image = '/farm-images/002-sprouts.png'
+          this.$emit('harvested', 'carrots')
       }
   },
   props: {

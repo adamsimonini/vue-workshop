@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="props">
       <h2>Passing Props</h2>
       <p>
         Have you noticed that our components are quite seperate? The farm has its own template and data, and each product (crop & livestock) has its own template and data. In this case,

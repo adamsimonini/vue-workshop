@@ -70,29 +70,33 @@ export default {
                 route: '/assignment-four'
             },
             {
-                caption: 'From child to parent: emitting',
+                caption: 'Emitting: from child to parent',
                 route: '/emitting'
             },
             {
-                caption: 'Lifecycle hooks (or, "It is not over until the last component mounts!")',
-                route: '/about'
+                caption: 'Challenge Five',
+                route: '/assignment-five'
             },
-            {
-                caption: 'Hands-on section: listen to the children!',
-                route: '/about'
-            },
+            // {
+            //     caption: 'Lifecycle hooks (or, "It is not over until the last component mounts!")',
+            //     route: '/about'
+            // },
+            // {
+            //     caption: 'Hands-on section: listen to the children!',
+            //     route: '/about'
+            // },
             {
                 caption: 'SPAs with Vue Router',
-                route: '/about'
+                route: '/routing'
             },
             {
-                caption: 'Slots & the amorphous component',
-                route: '/about'
+                caption: 'The End',
+                route: '/the-end'
             },
-            {
-                caption: 'Hands-on section: routing, slots, and SPAs (Oh my!)',
-                route: '/about'
-            },
+            // {
+            //     caption: 'Slots & the amorphous component',
+            //     route: '/about'
+            // },
         ],
     }
   },
@@ -121,6 +125,7 @@ export default {
     position: sticky;
     top: 0;
     padding-top: 20px;
+    min-width: 200px;
 }
 .closed-menu span {
     color: white;

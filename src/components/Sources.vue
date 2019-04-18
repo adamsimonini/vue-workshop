@@ -1,5 +1,5 @@
 <template>
-  <div class="sources">
+  <div @mouseover="mouseover" class="sources">
       <p><span>Further reading: </span><a :href='url' target='_blank'>{{url}}</a></p>
   </div>
 </template>
@@ -11,6 +11,12 @@ export default {
   },
   props: {
     url: String,
+  },
+  methods: {
+    mouseover: function () {
+        // let data = 'HERE YOU GO PARENT!' + this.url + '**ToParentFromChild**'
+        // this.$emit('passURL', data)
+    }
   }
 }
 </script>

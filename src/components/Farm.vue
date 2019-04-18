@@ -2,13 +2,13 @@
   <div class="farm">
       <h3>Welcome to {{yourName}}'s farm! <img class='barn' src="/farm-images/001-barn.png"/></h3>
       <div class='products'>
-        <div v-for="(crops, i) in 1" :key=i class='crop-row'>
-            <Carrots :geneticallyModify='true'/>
-            <Spinach />
-            <Spinach />
-            <Carrots />
+        <div v-for="(crops) in 1" :key=crops class='crop-row'>
+            <Carrots :geneticallyModify='true' v-on:harvested="addProfits"/>
+            <Spinach v-on:harvested="addProfits"/>
+            <Spinach v-on:harvested="addProfits"/>
+            <Carrots v-on:harvested="addProfits"/>
         </div>
-        <div v-for="(crops, i) in 1" :key=i class='livestock-row'>
+        <div v-for="(livestock, index) in 1" :key=index class='livestock-row'>
             <Cows />
             <Cows />
             <Chickens :geneticallyModify='true'/>
@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="numbers-row">
-          <span>Profit generated: {{profit}}</span>
+          <span>Gold coins generated: {{profit}}</span>
       </div>
   </div>
 </template>
@@ -41,6 +41,15 @@ export default {
     }
   },
   methods: {
+      addProfits: function (product) {
+          if (product == 'carrots') {
+              this.profit += 2
+          } else if (product == 'spinach') {
+              this.profit += 3
+          } else if (product == 'wheat'){
+              this.profit += 4
+          }
+      }
     },
   }
 
