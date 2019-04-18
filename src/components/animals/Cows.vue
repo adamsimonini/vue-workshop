@@ -1,6 +1,6 @@
 <template>
   <div class="cows livestock">
-      <img src="@/assets/farm-images/008-cow.png" />
+      <img src="/farm-images/008-cow.png" />
   </div>
 </template>
 

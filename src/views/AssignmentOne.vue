@@ -10,8 +10,9 @@
             You can find the "Carrot" component in the "crops" folder, inside the "components" folder. Use what you learned from the last slide to import "Carrot", and displaying it.
             We need a lot of carrots, so try planting many carrots. (I planted four, but you might be a more keen farmer than I.) Your results should look similar to this: 
         </p>
+        <div v-if='false'>
+        <h3>Example from my solution:</h3>
         <img src="../assets/farmExamples/carrotRow.jpg"/>
-        <div v-if='true'>
             <p>
                 But don't stop there! I hear the citizens of our neighbouring metropolis - Winterfell - are fickle eaters, with various tastes. Take a peak inside of the "farm-images" 
                 folder, one more crop to your farm's "crops" area, and two animals to your "livestock" area. 

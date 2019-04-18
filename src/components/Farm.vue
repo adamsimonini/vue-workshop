@@ -1,6 +1,6 @@
 <template>
   <div class="farm">
-      <h3>Welcome to {{yourName}}'s farm! <img class='barn' src="@/assets/farm-images/001-barn.png"/></h3>
+      <h3>Welcome to {{yourName}}'s farm! <img class='barn' src="/farm-images/001-barn.png"/></h3>
       <div class='products'>
         <div v-for="(crops, i) in 1" :key=i class='crop-row'>
             <Carrots :geneticallyModify='true'/>
@@ -14,6 +14,9 @@
             <Chickens :geneticallyModify='true'/>
             <Chickens />
         </div>
+      </div>
+      <div class="numbers-row">
+          <span>Profit generated: {{profit}}</span>
       </div>
   </div>
 </template>
@@ -34,6 +37,7 @@ export default {
   data: function() {
     return {
         yourName: 'Adam',
+        profit: 0,
     }
   },
   methods: {
@@ -54,12 +58,12 @@ h3 {
     align-items: center;
     justify-content: center;
 }
-.crop-row, .livestock-row {
+.crop-row, .livestock-row, .numbers-row {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    padding: 15px 0; 
+    padding: 15px 0;
 }
 .crop:hover {
     cursor: pointer;

@@ -17,7 +17,7 @@
         So, the path for all image resource should be changed to look like this: '/farm-images/050-carrots.png'
     </p>
 
-    <div v-if='true'>
+    <div v-if='false'>
     <h3>2) Add a harvest function to each crop, to flip the image on click</h3>
     <img src="../assets/farmExamples/harvestedCrops.jpg"/>
         <p>
