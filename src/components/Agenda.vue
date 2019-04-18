@@ -30,6 +30,10 @@ export default {
         show: false,
         links: [
             {
+                caption: 'Welcome!',
+                route: '/'
+            },
+            {
                 caption: 'Vue - What & Why?',
                 route: '/what-is-vue'
             },
