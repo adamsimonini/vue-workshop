@@ -1,29 +1,5 @@
 # vue-workshop
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Link to the CodeSandBox (be sure to press "Open in Editor" on the top right): https://codesandbox.io/embed/j2854k9pwv?fontsize=14
+The stand-alone webapp, for reference: https://github.com/adamsimonini/vue-workshop
+The completed project for reference if you get stuck: https://github.com/adamsimonini/vue-workshop
