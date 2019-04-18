@@ -8,7 +8,10 @@
     <p>
         If you need to stock up on a single crop, try adding a for loop into the individual crop's template tag.
     </p>
-    <img src="../assets/farmExamples/growingFarm.jpg"/>
+    <div v-if='false'>
+      <h3>Example from my solution:</h3>
+      <img src="../assets/farmExamples/growingFarm.jpg"/>
+    </div>
     <Farm />
   </div>
 </template>

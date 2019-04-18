@@ -66,15 +66,15 @@ export default {
                 route: '/props'
             },
             {
-                caption: 'Hands-on section: passing props',
-                route: '/about'
+                caption: 'Challenge Four',
+                route: '/assignment-four'
             },
             {
-                caption: 'From child to parent: event listeners & custom functions ($emit)',
-                route: '/about'
+                caption: 'From child to parent: emitting',
+                route: '/emitting'
             },
             {
-                caption: 'Lifecycle hooks (or, "It\'\s not over until the last component mounts!")',
+                caption: 'Lifecycle hooks (or, "It is not over until the last component mounts!")',
                 route: '/about'
             },
             {

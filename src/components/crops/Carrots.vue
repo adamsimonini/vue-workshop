@@ -1,6 +1,6 @@
 <template>
   <div class="crop carrots">
-      <img v-on:click='harvest' v-bind:src='image' />
+      <img v-bind:class="{genetidMod: geneticallyModify}" v-on:click='harvest' v-bind:src='image' />
   </div>
 </template>
 
@@ -18,6 +18,9 @@ export default {
       harvest: function() {
           this.image = '/farm-images/002-sprouts.png'
       }
+  },
+  props: {
+    geneticallyModify: Boolean,
   }
 }
 </script>

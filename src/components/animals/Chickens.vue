@@ -1,6 +1,6 @@
 <template>
   <div class="chickens livestock">
-      <img src="@/assets/farm-images/014-chicken.png" />
+      <img v-bind:class="{genetidMod: geneticallyModify}" src="@/assets/farm-images/014-chicken.png" />
   </div>
 </template>
 
@@ -14,6 +14,9 @@ export default {
     }
   },
   methods: {
+  },
+  props: {
+    geneticallyModify: Boolean,
   }
 }
 </script>

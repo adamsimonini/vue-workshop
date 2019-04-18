@@ -1,6 +1,6 @@
 <template>
   <div class="sources">
-      <p><span>Further reading: </span><a :href='sources' target='_blank'>{{sources}}</a></p>
+      <p><span>Further reading: </span><a :href='url' target='_blank'>{{url}}</a></p>
   </div>
 </template>
 
@@ -10,7 +10,7 @@ export default {
   components: {
   },
   props: {
-    sources: String,
+    url: String,
   }
 }
 </script>

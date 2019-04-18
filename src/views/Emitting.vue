@@ -1,13 +1,13 @@
 <template>
-  <div class="">
-      <h2>What Is Vue?</h2>
+  <div class="emitting">
+      <h2>Custom Event Listeners With $emit</h2>
   </div>
 </template>
 
 <script>
 
 export default {
-  name: '',
+  name: 'Emitting',
   components: {
   }
 }

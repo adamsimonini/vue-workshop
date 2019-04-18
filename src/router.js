@@ -9,6 +9,8 @@ import AssignmentOne from './views/AssignmentOne.vue'
 import AssignmentTwo from './views/AssignmentTwo.vue'
 import Directives from './views/VueDirectives.vue'
 import AssignmentThree from './views/AssignmentThree.vue'
+import AssignmentFour from './views/AssignmentFour.vue'
+import Emitting from './views/Emitting.vue'
 
 Vue.use(Router)
 
@@ -42,9 +44,9 @@ export default new Router({
         component: BindingData
     },
     {
-        path: '/assignment-two',
-        name: 'AssignmentTwo',
-        component: AssignmentTwo
+      path: '/assignment-two',
+      name: 'AssignmentTwo',
+      component: AssignmentTwo
     },
     {
       path: '/directives',
@@ -52,14 +54,24 @@ export default new Router({
       component: Directives
     },
     {
-        path: '/assignment-three',
-        name: 'AssignmentThree',
-        component: AssignmentThree
+      path: '/assignment-three',
+      name: 'AssignmentThree',
+      component: AssignmentThree
     },
     {
       path: '/props',
       name: 'Props',
       component: Props
+    },
+    {
+      path: '/assignment-four',
+      name: 'AssignmentFour',
+      component: AssignmentFour
+    },
+    {
+      path: '/emitting',
+      name: 'Emitting',
+      component: Emitting
     },
   ]
 })

@@ -2,16 +2,16 @@
   <div class="farm">
       <h3>Welcome to {{yourName}}'s farm! <img class='barn' src="@/assets/farm-images/001-barn.png"/></h3>
       <div class='products'>
-        <div v-for="(crops, i) in 4" :key=i class='crop-row'>
-            <Carrots />
+        <div v-for="(crops, i) in 1" :key=i class='crop-row'>
+            <Carrots :geneticallyModify='true'/>
             <Spinach />
             <Spinach />
             <Carrots />
         </div>
-        <div v-for="(crops, i) in 2" :key=i class='livestock-row'>
+        <div v-for="(crops, i) in 1" :key=i class='livestock-row'>
             <Cows />
             <Cows />
-            <Chickens />
+            <Chickens :geneticallyModify='true'/>
             <Chickens />
         </div>
       </div>
@@ -83,12 +83,16 @@ h3 {
 <style>
 /* global styles for our farm */
 .crop img {
-    max-width: 100px;
+    width: 100px;
 }
 .livestock img {
-    max-width: 70px;
+    width: 70px;
+    max-width: 110px;
 }
 img {
     max-width: 100%;
+}
+.genetidMod {
+    width: 150px !important;
 }
 </style>
