@@ -3,7 +3,7 @@
       <h3>Welcome to {{yourName}}'s farm! <img class='barn' src="/farm-images/001-barn.png"/></h3>
       <div class='products'>
         <div v-for="(crops) in 1" :key=crops class='crop-row'>
-            <Carrots :geneticallyModify='true' v-on:harvested="addProfits"/>
+            <Carrots :geneticallyModify='false' v-on:harvested="addProfits"/>
             <Spinach v-on:harvested="addProfits"/>
             <Spinach v-on:harvested="addProfits"/>
             <Carrots v-on:harvested="addProfits"/>
@@ -11,7 +11,7 @@
         <div v-for="(livestock, index) in 1" :key=index class='livestock-row'>
             <Cows />
             <Cows />
-            <Chickens :geneticallyModify='true'/>
+            <Chickens :geneticallyModify='false'/>
             <Chickens />
         </div>
       </div>

@@ -156,6 +156,7 @@ ul {
   justify-content: space-evenly;
   align-items: flex-start;
   width: 100%;
+  background-color: white;
 }
 li {
   display: inline-block;
