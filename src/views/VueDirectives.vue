@@ -9,7 +9,7 @@
       </p>
       <h3>V-Show</h3>
       <p>
-         V-show response too a boolean value. It's either true (and consequently show) or not true (and consequently hide). You can also use the "!" indicator to revese swap when 
+         V-show responds to a boolean value. It's either true (and consequently show) or not true (and consequently hide). You can also use the "!" indicator to revese swap when 
          showing and hiding is true. The simplest way to use "v-show" is to specify the boolean right in the code, though it's not very useful. Take a look at the code behind this page,
          and change the first Farm elemet's v-show value to "true", and then back to "false"
       </p>
