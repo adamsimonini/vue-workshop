@@ -1,6 +1,6 @@
 <template>
   <div class="crop carrots">
-      <img v-bind:class="{genetidMod: geneticallyModify}" v-on:click='harvest' v-bind:src='image' />
+      <img v-bind:class="{genetidMod: geneticallyModify}" v-on:click.once='harvest' v-bind:src='image' />
   </div>
 </template>
 

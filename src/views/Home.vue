@@ -1,13 +1,23 @@
 <template>
-  <HelloWorld />
+  <div class="home">
+      <h2>Welcome to this Vue.js workshop!</h2>
+      <P>
+          My goal here is to give you a hands-on, practical, and fun workshop on some core ideas in Vue.js. Here are some important links:
+      </P>
+      <ul>
+          <li>Link to the CodeSandBox (be sure to press "Open in Editor" on the top right): <a href="https://codesandbox.io/embed/j2854k9pwv">https://codesandbox.io/embed/j2854k9pwv?fontsize=14</a></li>
+          <li>The stand-alone webapp, for reference: <a href="https://vue-workshop.netlify.com/">https://vue-workshop.netlify.com/</a></li>
+          <li>The completed project for reference if you get stuck: <a href="https://github.com/adamsimonini/vue-workshop">https://github.com/adamsimonini/vue-workshop</a></li>
+      </ul>
+      <img src="../assets/farm-flat.jpg" />
+  </div>
 </template>
 
 <script>
-import HelloWorld from '../components/HelloWorld';
 
 export default {
+  name: 'home',
   components: {
-    HelloWorld,
   },
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div>
       <h2>Components & How To Use Them</h2>
       <p>
           With Vue.js (and React & Angular), developers can create components (i.e., reusable chunks of code). Components are imported via modern javascript: 

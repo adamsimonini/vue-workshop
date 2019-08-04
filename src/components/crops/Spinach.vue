@@ -1,6 +1,6 @@
 <template>
   <div class="crop spinach">
-      <img v-on:click='harvest' v-bind:src='image' />
+      <img v-on:click.once='harvest' v-bind:src='image' />
   </div>
 </template>
 
