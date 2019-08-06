@@ -1,6 +1,6 @@
 <template>
   <div class="assignment-one">
-        <h2>Challenge One: Let's Plant Some Crops</h2>
+        <h2>Challenge One: Let's plant some crops</h2>
         <p>
             Below is your farm! Congratulations, you've been promoted (or demoted, depending on how you look at it)... In any case, it's time to roll up your sleves. 
             The demand for carrots is currently sky high, so let's plant some.

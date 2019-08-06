@@ -14,8 +14,8 @@ export default {
   },
   methods: {
     mouseover: function () {
-        // let data = 'HERE YOU GO PARENT!' + this.url + '**ToParentFromChild**'
-        // this.$emit('passURL', data)
+        let data = 'HERE YOU GO PARENT!' + this.url + '**ToParentFromChild**'
+        this.$emit('passURL', data)
     }
   }
 }

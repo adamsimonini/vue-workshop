@@ -78,12 +78,6 @@
         </router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn icon>
-        <v-icon>apps</v-icon>
-      </v-btn>
-      <v-btn icon>
-        <v-icon>notifications</v-icon>
-      </v-btn>
       <a href="https://vuejs.org/v2/guide/" target="_blank">
         <v-btn
           icon
@@ -128,7 +122,6 @@ export default {
   components: {
   },
   data: () => ({
- dialog: false,
       drawer: null,
       items: [
         {
@@ -138,9 +131,9 @@ export default {
           model: true,
           children: [
             { text: 'Vue - What & Why?', route: '/what-is-vue' },
-            { text: 'Components & how to use them', route: '/components' },
+            { text: 'Components & How to Use Them', route: '/components' },
             { text: 'Challenge One', route: '/assignment-one' },
-            { text: 'Binding data & Events (pt.1)', route: '/binding-data' },
+            { text: 'Binding Data & Events (pt.1)', route: '/binding-data' },
             { text: 'Challenge Two', route: '/assignment-two' },
             { text: 'Vue Directives', route: '/directives' },
             { text: 'Challenge Three', route: '/assignment-three' },
@@ -154,7 +147,7 @@ export default {
           children: [
             { text: 'Passing Props (Properties)', route: '/props' },
             { text: 'Challenge Four', route: '/assignment-four' },
-            { text: 'Emitting: from child to parent', route: '/emitting' },
+            { text: 'Emitting: from Child to Parent', route: '/emitting' },
             { text: 'Challenge Five', route: '/assignment-five'},
             { text: 'SPAs with Vue Router', route: '/routing' },
             { text: 'The End', route: '/the-end' },
@@ -184,7 +177,8 @@ export default {
   font-size: 14px;
 }
 .router-link-active{
-  border-bottom: 1px solid #347d32;
+    border-left: 2px solid #347d32;
+    padding-left: 10px;
 }
 
 a {
@@ -195,5 +189,8 @@ a {
 #content-container {
   padding-left: 20px;
   width: 100%;
+}
+.v-list-group:nth-of-type(2){ 
+  border-top: 2px green solid;
 }
 </style>

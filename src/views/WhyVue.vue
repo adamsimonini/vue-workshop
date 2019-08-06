@@ -11,7 +11,7 @@
           These frameworks focus on components and state.
           <ul>
               <li><b>components</b> are re-usable bundles of code, which for our purposes will equal .vue files</li>
-              <li><b>state</b> refers to the data contained within each component, and the all as a whole, at a given point in time</li>
+              <li><b>state</b> can refer to either the data contained within a given component, or a snapshot of the data belonging to all components, at a given point in time</li>
           </ul>
       </p>
       <p>
@@ -19,11 +19,11 @@
       </p>
       <img src="../assets/vue-file-example.png" />
       <p>
-          .vue files are transpiled at build time into html, javascript, and css. 
+          .vue files are transpiled at build time into html, javascript, and css.
       </p>
       <p>
           So you can think of Vue.js as creating a layer of abstraction from the standard browser technologies
-          (Note, Vue.js can be used, and included into other web pages, without using .vue files. I will not be exmploring this today, but information can be found readily online) 
+          (Note, Vue.js can be used, and included into other web pages, without using .vue files. I will not be exploring this today, but information can be found readily online) 
       </p>
       <h3>Why use Vue.js: a story of two DOMs</h3>
       <p>

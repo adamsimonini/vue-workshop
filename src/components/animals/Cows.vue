@@ -1,6 +1,6 @@
 <template>
   <div class="cows livestock">
-      <img src="/farm-images/008-cow.png" />
+      <img v-on:click.once='harvest' v-bind:src='image' />
   </div>
 </template>
 
@@ -11,9 +11,14 @@ export default {
   },
   data: function() {
     return {
+      image: "/farm-images/008-cow.png",
     }
   },
   methods: {
+    harvest() {
+      this.image = "/farm-images/steak.jpg";
+      this.$emit('harvested', 'cow');
+    },
   }
 }
 </script>

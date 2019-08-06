@@ -2,23 +2,23 @@
   <div class="directives">
       <h2>Vue Directives (for & show)</h2>
       <p>
-          We're going to go on break soon, just one more lesson and challenge! We're doing great.
+          We're going to go on break soon - just one more lesson and challenge! You're doing great!
       </p>
       <p>
           We already saw directives before. It's that "v-" syntax. They allow us to specify DOM modification behaviour right in the template area. Let's focus on "v-show" & "v-for"
       </p>
       <h3>V-Show</h3>
       <p>
-         V-show responds to a boolean value. It's either true (and consequently show) or not true (and consequently hide). You can also use the "!" indicator to revese swap when 
-         showing and hiding is true. The simplest way to use "v-show" is to specify the boolean right in the code, though it's not very useful. Take a look at the code behind this page,
-         and change the first Farm elemet's v-show value to "true", and then back to "false"
+         V-show responds to a boolean value. It's either true (show) or not true (hide). You can also use the "!" indicator to revese when 
+         showing and hiding is true. The simplest way to use "v-show" is to specify the boolean right in the code, though it's not very useful. 
+         Take a look at the code behind this page (just under this paragraph), and change the first Farm component's v-show value to "true", and then back to "false"
       </p>
-      <Farm v-show="false" />
+      <Farm v-show='false' />
       <p>
         The second Farm element is a bit different. We should be familiar with it by now. What is different and why is that difference significant?
       </p>
       <button @click="toggleFarm">Show/Hide Farm</button>
-      <Farm v-show='showFarm'/>
+      <Farm v-show='showFarm' />
       <h3>V-For</h3>
       <p>
         This is a very neat directive. You can create a for-loop directly into your template, and bind various values to the template, while utilizing the index for organization.
@@ -93,5 +93,8 @@ export default {
 }
 .countryName{
     font-weight: 900;
+}
+.cityName {
+    min-width: 200px;
 }
 </style>

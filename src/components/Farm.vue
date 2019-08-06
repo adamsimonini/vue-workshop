@@ -9,14 +9,14 @@
             <Carrots v-on:harvested="addProfits"/>
         </div>
         <div v-for="(livestock, index) in 1" :key=index class='livestock-row'>
-            <Cows />
-            <Cows />
-            <Chickens :geneticallyModify='false'/>
-            <Chickens />
+            <Cows v-on:harvested="addProfits"/>
+            <Cows v-on:harvested="addProfits"/>
+            <Chickens v-on:harvested="addProfits" :geneticallyModify='false'/>
+            <Chickens v-on:harvested="addProfits" />
         </div>
       </div>
       <div class="numbers-row">
-          <span>Gold coins generated: {{profit}}</span>
+          <span> <v-icon>mdi-mouse</v-icon>Gold coins generated: {{profit}}</span>
       </div>
   </div>
 </template>
@@ -42,12 +42,19 @@ export default {
   },
   methods: {
       addProfits: function (product) {
-          if (product == 'carrots') {
-              this.profit += 2
-          } else if (product == 'spinach') {
-              this.profit += 3
-          } else if (product == 'wheat'){
-              this.profit += 4
+          switch (product) {
+              case 'carrots':
+                this.profit += 2;
+                break;   
+              case 'spinach':
+                this.profit += 2;
+                break;   
+              case 'cow':
+                this.profit += 8;
+                break;  
+              case 'chicken':
+                this.profit += 4;
+                break;   
           }
       }
     },

@@ -1,6 +1,6 @@
 <template>
   <div class="assignment-two">
-    <h2>Challenge Four: Genetic Modification</h2>
+    <h2>Challenge Four: Genetic modification</h2>
     <p>
       The long winter is upon winterfell, and its people are hungry. If they're to survive the long night, we'll need to make super crops: resiliant to cold with twice the yield!
       We might also want to genetically modify the animals, too. I'll leave it to your discretion.

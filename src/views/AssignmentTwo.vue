@@ -13,17 +13,19 @@
         in your code will cause the image to change in the browser.
     </p>
     <p>
-        Note: due to webpack, dynamic images are a bit tricky. I have placed a copy of all the images into the "public" folder. 
-        So, the path for all image resource should be changed to look like this: '/farm-images/050-carrots.png'
+        (Note: due to webpack, dynamic images are a bit tricky. I have placed a copy of all the images into the "public" folder. 
+        So, the path for all image resource should be changed to look like this: '/farm-images/050-carrots.png'.)
     </p>
-
-    <div v-if='false'>
+    <p>To get to Step 2 of this challenge, go into the .vue file for this component, and change the v-if directive from 'false' to 'true'.</p>
+    <v-btn @click="showTwo">Continue to Step 2</v-btn>
+    <br/><br/>
+    <div v-if='stepTwo'>
     <h3>2) Add a harvest function to each crop, to flip the image on click</h3>
     <img src="../assets/farmExamples/harvestedCrops.jpg"/>
         <p>
             After you are done binding the image src to a javascript string, you can then bind a click event to the given crop's image tag. Try adding 'v-on:click="harvest"', and then 
             creating a "harvest" function in the "methods" area of the component (of the crop). The harvest method should change the image string to "'/farm-images/002-sprouts.png'".
-            <b>Note: the component's methods only have access to variables described in "data()" by using the "this" keyword. So for example, the method must say "this.image = ...".</b>
+            <b>Note: when targetting variables described in "data()", we must use the "this" keyword to target the returned object. So for example, the method must say "this.image = ...".</b>
         </p>
         <p>
             (BONUS: If you have extra time, find an image of a steak, throw it into the project, and make the cow turn into it when clicked)
@@ -39,6 +41,16 @@ export default {
   name: 'AssignmentTwo',
   components: {
     Farm
+  },
+  data() {
+    return {
+      stepTwo: false,
+    }
+  },
+  methods: {
+    showTwo() {
+      this.stepTwo = !this.stepTwo;
+    }
   }
 }
 </script>

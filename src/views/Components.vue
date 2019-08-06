@@ -6,14 +6,14 @@
           <u>import ComponentName from './location-of-component.vue'</u>
       </p>
       <p>
-          Take a look at "src\views\WhyVue.vue", at line 44 you can find the following:
+          Take a look at "src\views\WhyVue.vue". At line 44 you can find the following:
       </p>
       <img src="../assets/importing-components.jpg"/>
       <p>
           At the top of the image we have an "HTML" tag called "< Soruces... >", then we see an import statement of "Sources", and finally within the export statement we also 
           see "Sources". What do you think is happening here?
       </p>
-      <button v-on:click='questionAnswered'>Continue</button>
+      <v-btn v-if=!this.continue v-on:click='questionAnswered'>Continue</v-btn>
       <div v-if=this.continue>
           <p>
               Vue.js allows us to create our own tags, and use them quite like legitimate HTML tags! All we have to do is tell the page (or parent component) making the call

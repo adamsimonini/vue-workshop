@@ -1,6 +1,6 @@
 <template>
   <div class="chickens livestock">
-      <img v-bind:class="{genetidMod: geneticallyModify}" src="/farm-images/014-chicken.png" />
+      <img v-on:click.once='harvest' v-bind:class="{genetidMod: geneticallyModify}" :src="image" />
   </div>
 </template>
 
@@ -11,9 +11,14 @@ export default {
   },
   data: function() {
     return {
+      image: "/farm-images/014-chicken.png"
     }
   },
   methods: {
+    harvest() {
+      this.image = "/farm-images/chicken-breast.png";
+      this.$emit('harvested', 'chicken');
+    },
   },
   props: {
     geneticallyModify: Boolean,

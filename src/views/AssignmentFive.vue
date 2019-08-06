@@ -1,6 +1,6 @@
 <template>
   <div class="assignment-two">
-    <h2>Challenge Five: Make Bank!</h2>
+    <h2>Challenge Five: Make bank!</h2>
     <p>
         Your farm has been really benefiting from the genetic modifications. You're making "too much" money, if there is such a thing. It's getting hard to track profits, so lets
         automatically track the profits of our crops. Uncomment the numbers-row in Farm.vue, and the profit variable in the data section of Farm.vue.
