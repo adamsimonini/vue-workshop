@@ -29,7 +29,7 @@
             <b>Note: when targetting variables described in "data()", we must use the "this" keyword to target the returned object. So for example, the method must say "this.image = ...".</b>
         </p>
         <p>
-            (BONUS: If you have extra time, find an image of a steak, throw it into the project, and make the cow turn into it when clicked)
+            (BONUS: If you have extra time, find an image of the steak and the chicken breast, and make the animals turn into them when clicked.)
         </p>
     </div>
     <Farm />
