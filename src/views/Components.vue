@@ -10,10 +10,10 @@
       </p>
       <img src="../assets/importing-components.jpg"/>
       <p>
-          At the top of the image we have an "HTML" tag called "< Soruces... >", then we see an import statement of "Sources", and finally within the export statement we also 
+          QUESTION: In the above image, we have an "HTML" tag called "< Soruces... >", we then see an import statement of "Sources", and finally within the export statement we also 
           see "Sources". What do you think is happening here?
       </p>
-      <v-btn v-if=!this.continue v-on:click='questionAnswered'>Continue</v-btn>
+      <v-btn v-if=!this.continue v-on:click='questionAnswered'>See Answer</v-btn>
       <div v-if=this.continue>
           <p>
               Vue.js allows us to create our own tags, and use them quite like legitimate HTML tags! All we have to do is tell the page (or parent component) making the call

@@ -193,4 +193,13 @@ a {
 .v-list-group:nth-of-type(2){ 
   border-top: 2px green solid;
 }
+
+.v-list-item__title{
+  color: black;
+  font-size: 0.9rem !important;
+}
+
+a {
+    color: #2E7D32 !important;
+}
 </style>

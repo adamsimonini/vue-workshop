@@ -23,7 +23,7 @@
       </p>
       <p>
           So you can think of Vue.js as creating a layer of abstraction from the standard browser technologies
-          (Note, Vue.js can be used, and included into other web pages, without using .vue files. I will not be exploring this today, but information can be found readily online) 
+          (Note, Vue.js can be used, and included into other web pages, without using .vue files. I will not be exploring this today, but information can be found readily online.) 
       </p>
       <h3>Why use Vue.js: a story of two DOMs</h3>
       <p>
