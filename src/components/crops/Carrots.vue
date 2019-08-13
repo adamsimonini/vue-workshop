@@ -11,12 +11,12 @@ export default {
   },
   data: function() {
     return {
-        image: '/farm-images/050-carrots.png',
+        image: '/farm-images/carrots.png',
     }
   },
   methods: {
       harvest: function() {
-          this.image = '/farm-images/002-sprouts.png'
+          this.image = '/farm-images/sprouts.png'
           this.$emit('harvested', 'carrots')
       }
   },

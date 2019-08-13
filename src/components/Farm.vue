@@ -1,6 +1,6 @@
 <template>
   <div class="farm">
-      <h3>Welcome to {{yourName}}'s farm! <img class='barn' src="/farm-images/001-barn.png"/></h3>
+      <h3>Welcome to {{yourName}}'s farm! <img class='barn' src="/farm-images/barn.png"/></h3>
       <div class='products'>
         <div v-for="(crops) in 1" :key=crops class='crop-row'>
             <Carrots :geneticallyModify='false' v-on:harvested="addProfits"/>
@@ -82,6 +82,9 @@ h3 {
     padding: 15px 0;
 }
 .crop:hover {
+    cursor: pointer;
+}
+.livestock:hover {
     cursor: pointer;
 }
 .crops > div {

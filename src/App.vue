@@ -74,7 +74,7 @@
       >
         <v-app-bar-nav-icon  class="home-title" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
         <router-link  class="home-title" to="/">
-          <h1 class="hidden-sm-and-down">Vue Workshop</h1>
+          <h1>Vue Workshop</h1>
         </router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>

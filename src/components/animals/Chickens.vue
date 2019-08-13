@@ -11,7 +11,7 @@ export default {
   },
   data: function() {
     return {
-      image: "/farm-images/014-chicken.png"
+      image: "/farm-images/chicken.png"
     }
   },
   methods: {
