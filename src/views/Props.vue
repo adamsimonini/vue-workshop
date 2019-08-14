@@ -14,7 +14,7 @@
       <p>
           In Vue.js, we can create our own attributes, call them anything we like, and give them any value we want. We can hard code the value, but more interestingly we can bind
           the value of our custom attribute to a variable, so that the child changes as the data from the parent changes. The important part is that we can let the child receive
-          this data! Note: binding is a v- directive, which means something to do with javascript if you remember. So whereas we don't need to bind thge string "false" as a prop,
+          this data! Note: binding is a v- directive, which means something to do with javascript if you remember. So whereas we don't need to bind the string "false" as a prop,
           we would need to bind the bool false, or a number. Why is this the case?
       </p>
       <img src="../assets/parentChild.png" />
