@@ -9,7 +9,7 @@ The stand-alone webapp, for reference: https://vue-workshop.netlify.com/
 The completed project for reference if you get stuck: https://github.com/adamsimonini/vue-workshop
 
 
-<h2>How TO Use This App<h2>
+<h2>How To Use This App<h2>
   
 <ol>
  <li>Navigate using the nav bar on the left.</li>
