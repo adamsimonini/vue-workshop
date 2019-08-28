@@ -48,6 +48,11 @@
 import Sources from '@/components/Sources.vue'
 export default {
   name: 'Props',
+  props: {
+    title: String,
+    likes: Number,
+    isPublished: Boolean,
+  },
   data: function () {
    return {
      selected: ''
