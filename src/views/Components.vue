@@ -10,7 +10,7 @@
       </p>
       <img src="../assets/importing-components.jpg"/>
       <p>
-          QUESTION: In the above image, we have an "HTML" tag called "< Soruces... >", we then see an import statement of "Sources", and finally within the export statement we also 
+          QUESTION: In the above image, we have an "HTML" tag called "< Sources... >", we then see an import statement of "Sources", and finally within the export statement we also 
           see "Sources". What do you think is happening here?
       </p>
       <v-btn v-if=!this.continue v-on:click='questionAnswered'>See Answer</v-btn>
@@ -21,11 +21,12 @@
           </p>
           <p>
               We also need to explicitly tell the page or parent component to export this child component.
-              Try removing "Sources" from within "components: { }" on this page. What happens? (You will have to click continue again due to hot-reloading)
+              Try removing "Sources" from within "components: { }" on this page. What happens? (You may have to click "See Answer" again due to hot-reloading.)
           </p>
           <p>
-              Now try going into Sources.vue and changing the background-color from "unset" to "orange" (or any other color). 
-              Notice how all pages using the "Sources" component receive your change.
+              Now go to Sources.vue (location: <span class="path">src/components/Sources.vue</span>) and change the border-color from to "orange" (or any other color). 
+              All pages in this project that use the "Sources" component receive your colour change (e.g., Challenge Four). Also note that, via under the hood webpack configurations,
+              the "@" symbol in a pathing name equals "src".
           </p>
       </div>
       <Sources url="https://vuejs.org/v2/guide/components.html" />
