@@ -19,28 +19,38 @@
       </p>
       <img src="../assets/parentChild.png" />
       <p>
-          The image above describes a parent-child relationship. The parent can pass down data to the child, and the child can also react to events and inform the parent of its state
+          The image above describes a parent-child relationship. The parent can pass down data to the child, and the child can also react to changes and inform the parent of its state
           by emitting events. (We'll talk about emitting events soon, but not now.) 
       </p>
        <p>
         In other words, the parent describes some data, and it passes that data to the child. The child receives that data as part of its "props" object. Take a look at the 
         "Sources.vue" file found in the "components" folder. It has a "props" object, with a property called "url". We might say "Sources has a property called url". Now look at the 
         instantiation of the "Sources" tag on the "WhyVue.vue" page. That instance has an attribute "url", which is being passed a string. Our "Sources.vue" file expects a prop called "url" 
-        to be passed to it, and we are binding the href to that value, as well as the text displayed within the anchor tag.
+        to be passed to it, and we are binding the href to that value, as well as the text displayed within the anchor tag. So, the "Sources" component itself doesn't explicitly state where the
+        href leads to. Rather, it always needs to be handed that value by the parent.
       </p>
+      <img src="../assets/propsExample.png" />
       <p>
-        Finally, take a peak at "Sources" component on this page. Here, I have bound its value to the variable "selected", and the variable "selected" models 
-        the value of the select element. (You can see more examples of v-model back on <router-link to="/binding-data">BindingData.vue</router-link>)
+        Bonus: take a peak at the "Sources" component on this page. Here, there is an instance of "Sources" in the template area. However, instead of hard-coding the value of Sources' url,
+        I have instead bound it to the value of "selected", which in turn models the value of the selected item in the "v-select" component. This is an example of passing data between
+        components, and of being reactive, with very little developmental overhead. I had to do very little hear to get a lot of javascript to happen.
+        (You can see more examples of v-model back on <router-link to="/binding-data">BindingData.vue</router-link>)
 
       </p>
     <Sources v-bind:url="selected"/>
-    <select v-model="selected">
-      <option disabled value="">Select a source</option>
-      <option value="https://vuejs.org/v2/guide/components-props.html">vuejs.org</option>
-      <option value="https://flaviocopes.com/vue-props/">flaviocopes.com</option>
-      <option value="https://css-tricks.com/intro-to-vue-2-components-props-slots/">css-trinks</option>
-      <option value="https://stackoverflow.com/questions/33616772/understanding-props-in-vue-js">stackoverflow</option>
-    </select>
+    <v-container fluid>
+      <v-row align="center">
+        <v-col class="d-flex" cols="12" sm="6">
+          <v-select
+            color="#2E7D32"
+            v-model="selected"
+            :items="items"
+            label="Select an article for further reading"
+            outlined
+          ></v-select>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
@@ -55,7 +65,13 @@ export default {
   },
   data: function () {
    return {
-     selected: ''
+     selected: '',
+     items: [
+              'https://vuejs.org/v2/guide/components-props.html', 
+              'https://flaviocopes.com/vue-props/', 
+              'https://css-tricks.com/intro-to-vue-2-components-props-slots/',
+              'https://stackoverflow.com/questions/33616772/understanding-props-in-vue-js'
+            ],
    }
   },
   components: {
