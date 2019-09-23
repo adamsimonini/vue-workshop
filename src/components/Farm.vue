@@ -6,11 +6,11 @@
     </h3>
     <div class="products">
       <div class="crop-row">
-        <Carrots/>
-        <Carrots/>
-        <Carrots/>
-        <Carrots/>
-        <Spinach/>
+        <Carrots />
+        <Carrots />
+        <Carrots />
+        <Carrots />
+        <Spinach />
       </div>
       <div class="livestock-row"></div>
     </div>

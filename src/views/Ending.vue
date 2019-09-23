@@ -7,7 +7,8 @@
     <p>
         There were a few more topics and story ideas I wished to go over, but I ran out of time. Nonetheless, I hope enjoyed this workshop, and thank you for your participation!
     </p>
-    <Farm />
+    <!-- <Farm /> -->
+    <img src="../assets/farmComplete.jpg" />
   </div>
 </template>
 
