@@ -15,7 +15,7 @@
     <p>
         (Note: due to webpack, dynamic images are a bit tricky. I have placed a copy of all the images into the "public" folder: "root/public/farm-images". 
         <br />
-        For your purposes, the path for all image resourcse should be changed to look like this: '/farm-images/carrots.png'.)
+        For your purposes, the path for all image resourcse should be changed to look like this: <span class="path">"/farm-images/carrots.png"</span>.)
     </p>
     <p>To get to Step 2 of this challenge, go into the .vue file for this component, and change the v-if directive from 'false' to 'true'.</p>
     <v-btn @click="showTwo">Continue to Step 2</v-btn>

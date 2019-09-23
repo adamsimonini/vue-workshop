@@ -6,7 +6,7 @@
           <u>import ComponentName from './location-of-component.vue'</u>
       </p>
       <p>
-          Take a look at "src\views\WhyVue.vue". At line 44 you can find the following:
+          Take a look at <span class="path">"src\views\WhyVue.vue"</span>. At line 44 you can find the following:
       </p>
       <img src="../assets/importing-components.jpg"/>
       <p>
