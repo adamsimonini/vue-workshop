@@ -202,4 +202,7 @@ a {
 a {
     color: #2E7D32 !important;
 }
+.path {
+  color: #347d32;
+}
 </style>
