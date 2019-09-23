@@ -12,7 +12,7 @@
             tile
           >
             <v-list-item>
-              <a class="link" href="https://codesandbox.io/s/vue-workshop-fresh-1482019-ugfxf" target="_blank">
+              <a class="link" href="https://codesandbox.io/s/vue-workshop-fresh-2392019-2reiz" target="_blank">
                 <v-list-item-content>
                   <v-list-item-title>CodeSandBox</v-list-item-title>
                   <v-list-item-subtitle>- full repo with IDE & live demo</v-list-item-subtitle>
