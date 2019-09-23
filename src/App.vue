@@ -125,8 +125,6 @@ export default {
       drawer: null,
       items: [
         {
-          icon: 'keyboard_arrow_up',
-          'icon-alt': 'keyboard_arrow_down',
           text: 'Part I',
           model: true,
           children: [
@@ -140,8 +138,6 @@ export default {
           ],
         },
         {
-          icon: 'keyboard_arrow_up',
-          'icon-alt': 'keyboard_arrow_down',
           text: 'Part II',
           model: false,
           children: [
