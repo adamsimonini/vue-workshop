@@ -202,6 +202,6 @@ a {
   color: #347d32;
 }
 .challenge {
-  color: orange;
+  color: #db9200;
 }
 </style>

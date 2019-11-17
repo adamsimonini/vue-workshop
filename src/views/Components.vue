@@ -5,7 +5,7 @@
           With Vue.js, developers can create components (i.e., reusable chunks of code). Components are imported via modern javascript import statements: 
           <Editor v-model="iDEContent" @init="editorInit" lang="javascript" theme="chrome" width="500" height="45" />
       </p>
-      <p><span class="challenge">Mini-challenge: </span>in the above IDE, write the import statement for a component named "Calculator" located at "./components/Calculator.vue"</p>
+      <p><span class="challenge">Mini Challenge: </span>in the above IDE, write the import statement for a component named "Calculator" located at "./components/Calculator.vue"</p>
       <p>
           Take a look at <span class="path">"src\views\WhyVue.vue"</span>. You can find the following:
       </p>
