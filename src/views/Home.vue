@@ -1,6 +1,7 @@
 <template>
   <div class="home">
       <h2>Welcome to this Vue.js workshop!</h2>
+      <!-- <editor v-model="content" @init="editorInit" lang="html" theme="chrome" width="500" height="300"></editor> -->
       <P>
           My goal here is to give you a hands-on, practical, and fun workshop on some core ideas in Vue.js. Here are some important links:
       </P>
@@ -11,15 +12,6 @@
             max-width="400"
             tile
           >
-            <v-list-item>
-              <a class="link" href="https://codesandbox.io/s/vue-workshop-fresh-2392019-2reiz" target="_blank">
-                <v-list-item-content>
-                  <v-list-item-title>CodeSandBox</v-list-item-title>
-                  <v-list-item-subtitle>- full repo with IDE & live demo</v-list-item-subtitle>
-                </v-list-item-content>
-              </a>
-            </v-list-item>
-
             <v-list-item >
               <a class="link" href="https://vue-workshop.netlify.com/" target="_blank">
               <v-list-item-content>
@@ -56,6 +48,7 @@
 export default {
   name: 'home',
   components: {
+      editor: require('vue2-ace-editor'),
   },
 };
 </script>

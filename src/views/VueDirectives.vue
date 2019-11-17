@@ -1,24 +1,24 @@
 <template>
   <div class="directives">
       <h2>Vue Directives (for & show)</h2>
-      <p>
-          We're going to go on break soon - just one more lesson and challenge! You're doing great!
-      </p>
+      <p>We're going to go on break soon - just one more lesson and challenge! You're doing great!</p>
       <p>
           We already saw directives before. It's that "v-" syntax. They allow us to specify DOM modification behaviour right in the template area. Let's focus on "v-show" & "v-for"
       </p>
       <h3>V-Show</h3>
       <p>
-         V-show responds to a boolean value. It's either true (show) or not true (hide). You can also use the "!" indicator to revese when 
+         V-show responds to a boolean value. It's either true (show) or false (hide). You can also use the "!" indicator to revese when 
          showing and hiding is true. The simplest way to use "v-show" is to specify the boolean right in the code, though it's not very useful. 
          Take a look at the code behind this page (just under this paragraph), and change the first Farm component's v-show value to "true", and then back to "false"
       </p>
+
       <Farm v-show='false' />
-      <p>
-        The second Farm element is a bit different. We should be familiar with it by now. What is different and why is that difference significant?
-      </p>
-      <button @click="toggleFarm">Show/Hide Farm</button>
+
+      <p>The second Farm component is implemented different. What is difference and why is it significant?</p>
+
+      <v-btn @click="toggleFarm">Show/Hide Farm</v-btn>
       <Farm v-show='showFarm' />
+
       <h3>V-For</h3>
       <p>
         This is a very neat directive. You can create a for-loop directly into your template, and bind various values to the template, while utilizing the index for organization.
@@ -35,7 +35,7 @@
       <div v-for='(item, index) in inventory' :key=item>
           <p>{{index + 1}} {{item}}</p>
       </div>
-      <h4>Array of objects</h4>
+      <h4>Array of objects example</h4>
         <div id="majorCities">
             <div class="countries" v-for="location in locations" v-bind:key="location.id">
                 <span class="countryName">{{location.country}}</span>
