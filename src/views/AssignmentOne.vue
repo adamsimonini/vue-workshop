@@ -15,8 +15,8 @@
           <h3>Example from my solution:</h3>
           <img src="../assets/farmExamples/carrotRow.jpg"/>
           <p>
-              But don't stop there! I hear the citizens of our neighbouring metropolis - Winterfell - are fickle eaters, with various tastes. Take a peak inside of the "farm-images" 
-              folder, one more crop to your farm's "crops" area, and two animals to your "livestock" area. 
+              Don't stop there! I hear the citizens of our neighbouring metropolis (Winterfell) are fickle eaters, with various tastes. Take a peak inside of the "farm-images" 
+              folder, add one more crop to your farm's "crops" area, and add two animals to your "livestock" area.
               <b>Hint: you can simply copy & paste the "Carrot" component from earlier, and then swap out the relevant names and images.</b>
           </p>
         </div>

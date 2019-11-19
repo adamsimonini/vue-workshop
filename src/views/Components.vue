@@ -2,11 +2,12 @@
   <div>
       <h2>Components & How To Use Them</h2>
       <p>
-          With Vue.js (and React & Angular), developers can create components (i.e., reusable chunks of code). Components are imported via modern javascript: 
-          <u>import ComponentName from './location-of-component.vue'</u>
+          With Vue.js, developers can create components (i.e., reusable chunks of code). Components are imported via modern javascript import statements: 
+          <Editor v-model="iDEContent" @init="editorInit" lang="javascript" theme="chrome" width="500" height="45" />
       </p>
+      <p><span class="challenge">Mini Challenge: </span>in the above IDE, write the import statement for a component named "Calculator" located at "./components/Calculator.vue"</p>
       <p>
-          Take a look at <span class="path">"src\views\WhyVue.vue"</span>. At line 44 you can find the following:
+          Take a look at <span class="path">"src\views\WhyVue.vue"</span>. You can find the following:
       </p>
       <img src="../assets/importing-components.jpg"/>
       <p>
@@ -38,18 +39,25 @@ import Sources from '@/components/Sources.vue'
 export default {
   name: '',
   components: {
+      Editor: require('vue2-ace-editor'),
       Sources
   },
   data: function() {
     return {
-        continue: false
+        continue: false,
+        iDEContent: "import ComponentName from './location-of-component.vue'",
     }
   },
   methods: {
-      questionAnswered: function() {
-          this.continue = true
-      }
-  }
+    editorInit: function () {
+        require('brace/ext/language_tools') //language extension prerequsite...            
+        require('brace/mode/javascript')    //language
+        require('brace/theme/chrome')
+    },
+    questionAnswered: function() {
+        this.continue = true
+    }
+  },
 }
 </script>
 

@@ -201,4 +201,7 @@ a {
 .path {
   color: #347d32;
 }
+.challenge {
+  color: #db9200;
+}
 </style>
