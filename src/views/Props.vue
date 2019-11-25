@@ -34,7 +34,7 @@
         Bonus: take a peak at the "Sources" component on this page. Here, there is an instance of "Sources" in the template area. However, instead of hard-coding the value of Sources' url,
         I have instead bound it to the value of "selected", which in turn models the value of the selected item in the "v-select" component. This is an example of passing data between
         components, and of being reactive, with very little developmental overhead. I had to do very little hear to get a lot of javascript to happen.
-        (You can see more examples of v-model back on <router-link to="/binding-data">BindingData.vue</router-link>)
+        (You can see more examples of v-model back on <router-link to="/binding-data">DataBinding.vue</router-link>)
 
       </p>
     <Sources v-bind:url="selected"/>

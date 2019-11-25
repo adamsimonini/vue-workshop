@@ -14,7 +14,7 @@
 
       <Farm v-show='false' />
 
-      <p>The second Farm component is implemented different. What is difference and why is it significant?</p>
+      <p>The second Farm component is implemented differently. What is difference and why is it significant?</p>
 
       <v-btn @click="toggleFarm">Show/Hide Farm</v-btn>
       <Farm v-show='showFarm' />
@@ -22,15 +22,18 @@
       <h3>V-For</h3>
       <p>
         This is a very neat directive. You can create a for-loop directly into your template, and bind various values to the template, while utilizing the index for organization.
-        For loops done this way require a "key", which is usually bound to the index. The key is used as an identifier for the generated item, so that Vue.js can keep track of them.
+        For loops done this way require a "key". The key is used as a unique identifier for the generated item, so that Vue.js can efficiently keep track of changes of changes to the looped items.
+      </p>
+      <p>
+        The most simple instances of v-for uses a number to identify how many loops must be completed, as seen above
       </p>
       <h4>Number</h4>
       <div v-for='item in 3' :key=item>
           <p>{{item}}</p>
       </div>
-      <p>
-        The most simple instances of v-for uses a number to identify how many loops must be completed, as seen above
-      </p>
+      <Editor v-model="miniOne" lang="html" theme="chrome" width="500" height="120" />
+      <p><span class="challenge">Mini Challenge: </span> in the above IDE, complete the code to get the vacationItems to show. Use the source code on this page to learn how to get and use the loop's index.
+
       <h4>Array</h4>
       <div v-for='(item, index) in inventory' :key=item>
           <p>{{index + 1}} {{item}}</p>
@@ -42,7 +45,6 @@
                 <div class="cityList">
                     <span class="cityName" v-for="(majorCity, i) in location.majorCities" v-bind:key="majorCity.id">{{i + 1}}. {{majorCity}} <span v-html="medal[i]"></span></span>
                 </div>
-                <!-- v-binding style causes the style to become jabascript that accepts two parameters ('style to be changed', 'value of the change') -->
             </div>
         </div>
   </div>
@@ -54,9 +56,11 @@ export default {
   name: 'Directives',
   components: {
       Farm,
+      Editor: require('vue2-ace-editor'),
   },
   data: function () {
     return {
+        miniOne: "<ul> \n  <li v-for'___ in ___' :key='vacationItems[i]'>item</li> \n</ul>\n\n data: function() {\n  return { \n   vacationItems: ['tooth paste', 'pillow', 'sandals']\n  } \n}",
         showFarm: false,
         inventory: ['tomatoes', 'rice', 'corn', 'cabbage', 'eggs', 'cheese'],
         locations: [

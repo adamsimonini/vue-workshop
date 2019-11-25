@@ -44,7 +44,7 @@
 <script>
 
 export default {
-  name: 'BindingData',
+  name: 'DataBinding',
   components: {
     Editor: require('vue2-ace-editor'),
   },
