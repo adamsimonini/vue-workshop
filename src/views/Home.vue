@@ -1,7 +1,6 @@
 <template>
   <div class="home">
       <h2>Welcome to this Vue.js workshop!</h2>
-      <!-- <editor v-model="content" @init="editorInit" lang="html" theme="chrome" width="500" height="300"></editor> -->
       <P>
           My goal here is to give you a hands-on, practical, and fun workshop on some core ideas in Vue.js. Here are some important links:
       </P>
@@ -48,7 +47,6 @@
 export default {
   name: 'home',
   components: {
-      editor: require('vue2-ace-editor'),
   },
 };
 </script>

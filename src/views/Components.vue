@@ -3,7 +3,7 @@
       <h2>Components & How To Use Them</h2>
       <p>
           With Vue.js, developers can create components (i.e., reusable chunks of code). Components are imported via modern javascript import statements: 
-          <Editor v-model="iDEContent" @init="editorInit" lang="javascript" theme="chrome" width="500" height="45" />
+          <Editor v-model="iDEContent" @init="editorInit" lang="javascript" width="500" height="45" />
       </p>
       <p><span class="challenge">Mini Challenge: </span>in the above IDE, write the import statement for a component named "Calculator" located at "./components/Calculator.vue"</p>
       <p>
@@ -52,7 +52,6 @@ export default {
     editorInit: function () {
         require('brace/ext/language_tools') //language extension prerequsite...            
         require('brace/mode/javascript')    //language
-        require('brace/theme/chrome')
     },
     questionAnswered: function() {
         this.continue = true

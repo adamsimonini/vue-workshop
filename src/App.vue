@@ -131,7 +131,7 @@ export default {
             { text: 'Vue - What & Why?', route: '/what-is-vue' },
             { text: 'Components & How to Use Them', route: '/components' },
             { text: 'Challenge One', route: '/assignment-one' },
-            { text: 'Binding Data & Events (pt.1)', route: '/binding-data' },
+            { text: 'Data Binding & Events', route: '/data-binding' },
             { text: 'Challenge Two', route: '/assignment-two' },
             { text: 'Vue Directives', route: '/directives' },
             { text: 'Challenge Three', route: '/assignment-three' },

@@ -13,6 +13,7 @@
           on this JSON object, and the DOM is synchronized with the v-DOM by an efficient updaing function. Beyond performance, new opportunities arise. Because everything is
           being done in Javascript, having elements update each other, and displaying those changes to the user, is more simple to code. It's baked right in! 
       </p>
+      <img src="../assets/learning_curve.png" />
       <Sources url="https://medium.com/js-dojo/whats-the-deal-with-vue-s-virtual-dom-3ed4fc0dbb20" />
   </div>
 </template>

@@ -4,7 +4,7 @@ import Home from './views/Home.vue'
 import WhyVue from './views/WhyVue.vue'
 import Components from './views/Components.vue'
 import Props from './views/Props.vue'
-import BindingData from './views/BindingData.vue'
+import DataBinding from './views/DataBinding.vue'
 import AssignmentOne from './views/AssignmentOne.vue'
 import AssignmentTwo from './views/AssignmentTwo.vue'
 import Directives from './views/VueDirectives.vue'
@@ -42,9 +42,9 @@ export default new Router({
         component: AssignmentOne
     },
     {
-        path: '/binding-data',
-        name: 'BindingData',
-        component: BindingData
+        path: '/data-binding',
+        name: 'DataBidning',
+        component: DataBinding
     },
     {
       path: '/assignment-two',
