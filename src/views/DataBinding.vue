@@ -30,9 +30,9 @@
           "javascripty stuff" to be happening when using "v-"
       </p>
       <p>
-          We can use Vue directives to add event listeners. For that, we'll use "v-on:" plus the event listener's name. For example, "v-on:click=harvest" 
-          (or "@click=harvest" for the short form). We made the click equal "harvest", so in our script area, we need to define the function "harvest". We will do that
-          under the "methods" property of the object being returned by the "data()" function. Check the code on this page and make sure you understand what is going on with the click event. It's important for the next challenge.
+          We can use Vue directives to add event listeners. For that, we'll use v-on: + event listener's name = function to be triggered by the event. For example, "v-on:click=harvest" 
+          (or "@click=harvest" for the short form). That code made the click trigger "harvest". Now we need to define harvest. We can do that in the script area of our file, within the export object. 
+          Add a "methods" property to the export object, and define your function in there. Check the code on this page and make sure you understand what is going on with the click event. It's important for the next challenge.
       </p>
       <Editor v-model="miniThree" lang="javascript" width="500" height="120" />
       <p><span class="challenge">Mini Challenge 3: </span> in the above IDE, make the second button also transmit an alert on click.</p>
