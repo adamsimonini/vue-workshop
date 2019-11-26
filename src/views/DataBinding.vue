@@ -5,7 +5,7 @@
           We already saw data binding in action when we changed the name of our farm. There, we did interpolation by using double curly braces to implant a javascript
           variable into our template area. As the variable changes, the content within the HTML will follow suit. It's just that simple! 
       </p>
-      <Editor v-model="miniOne" lang="html" theme="chrome" width="500" height="100" />
+      <Editor v-model="miniOne" lang="javascript" width="500" height="100" />
       <p><span class="challenge">Mini Challenge 1: </span>in the above IDE, change the value of someVariable to 'chicken'. What will be displayed in the p tag?</p>
       <h3>Data binding</h3>
       <p>
@@ -21,7 +21,7 @@
         </v-flex>
       <h4>Two way binding of text box: {{checkbox}}</h4>
       <v-checkbox v-model="checkbox" color="#2E7D32"> </v-checkbox>
-      <Editor v-model="miniTwo" lang="html" theme="chrome" width="500" height="120" />
+      <Editor v-model="miniTwo" lang="javascript" width="500" height="120" />
       <p><span class="challenge">Mini Challenge 2: </span> in the above IDE, make it so that the p tag has "default" as its default text. What happens if the user modifies the input value?</p>
 
       <h3>Directives and Events</h3>
@@ -34,7 +34,7 @@
           (or "@click=harvest" for the short form). We made the click equal "harvest", so in our script area, we need to define the function "harvest". We will do that
           under the "methods" property of the object being returned by the "data()" function. Check the code on this page and make sure you understand what is going on with the click event. It's important for the next challenge.
       </p>
-      <Editor v-model="miniThree" lang="html" theme="chrome" width="500" height="120" />
+      <Editor v-model="miniThree" lang="javascript" width="500" height="120" />
       <p><span class="challenge">Mini Challenge 3: </span> in the above IDE, make the second button also transmit an alert on click.</p>
 
       <v-btn v-on:click='harvest'>Power On Harvester</v-btn>
@@ -59,9 +59,12 @@ export default {
   },
   methods: {
     editorInit: function () {
-        require('brace/ext/language_tools') //language extension prerequsite...            
-        require('brace/mode/html')    //language
-        require('brace/theme/chrome')
+      require('brace/ext/language_tools') //language extension prerequsite...
+      require('brace/mode/html')                
+      require('brace/mode/javascript')    //language
+      require('brace/mode/less')
+      require('brace/theme/chrome')
+      require('brace/snippets/javascript') //snippet
     },
     harvest: function() {
         alert('Alert: harvester powered on!')
