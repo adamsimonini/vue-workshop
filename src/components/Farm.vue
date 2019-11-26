@@ -9,11 +9,10 @@
         <Carrots />
         <Spinach />
       </div>
-      <div class="livestock-row"></div>
+      <div class="livestock-row">
+        
+      </div>
     </div>
-    <!-- <div class="numbers-row">
-          <span>Gold coins generated: {{profit}}</span>
-    </div> -->
   </div>
 </template>
 
@@ -30,7 +29,6 @@ export default {
   data: function() {
     return {
       yourName: "{yourName}"
-      // profit: 0,
     };
   },
   methods: {}
