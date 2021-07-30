@@ -6,7 +6,7 @@
 		</h3>
 		<div class="products">
 			<div class="crop-row">
-				<Carrots />
+				<!-- <Carrots /> -->
 				<!-- There seems to be a bug below! The spinach component produces a carrot image. Let's fix it! -->
 				<Spinach />
 			</div>
@@ -16,13 +16,13 @@
 </template>
 
 <script>
-import Carrots from "./crops/Carrots.vue";
+// import Carrots from "./crops/Carrots.vue";
 import Spinach from "./crops/Spinach.vue";
 
 export default {
 	name: "Farm",
 	components: {
-		Carrots,
+		// Carrots,
 		Spinach
 	},
 	data: function() {
