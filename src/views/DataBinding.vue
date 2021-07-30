@@ -50,7 +50,7 @@ export default {
 			miniTwo: "<input type='text' v-model='userInput' /> \n<p>{{ userInput }}</p> \n\n data: function() {\n  return { \n   userInput: ''\n  } \n}",
 			miniThree: "<button @click='sendAlert'></button> \n<button></button>  \n\nmethods: { \n sendAlert: function() {\n   alert('you clicked me') \n } \n}",
 			userInput: "",
-			checkbox: false
+			checkbox: true
 		};
 	},
 	methods: {

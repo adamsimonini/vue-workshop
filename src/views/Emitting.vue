@@ -15,8 +15,8 @@
               <li>"handleClick" results in an emit statement: "this.$emit('functionParentListensFor)'"</li>
               <b>Parent Part</b>
               <li>The parent is set to listen for the custom event (which in this case is "clickedSomething")</li>
-              <li>When the parent detects "clickedSomething", it runs its own function in response (which in this case is called "handleCLickInParent")</li>
-              <li>"handleCLickInParent" is defined in the parent's methods, and runs its code</li>
+              <li>When the parent detects "clickedSomething", it runs its own function in response (which in this case is called "handleClickInParent")</li>
+              <li>"handleClickInParent" is defined in the parent's methods, and runs its code</li>
           </ol>
       </p>
       <img src="../assets/emit.jpg" />
